@@ -36,7 +36,7 @@ namespace MiniBind
 			IStorage storage = new Storage();
 			MiniBind mb = new MiniBind(storage);
 			contexts.Add(id, mb);
-		return mb;
+			return mb;
 		}
 	}
 }
