@@ -7,12 +7,12 @@ Add any binding component to gameobject and set key. Eg. Add <b>TextBinding</b> 
 Before setting value of this text, add this MiniBind field to your code to use it easily:
 
 ```csharp
-private MiniBind uiContext
+private MiniBind.MiniBind uiContext
 {
-	get
-	{
-		return MBManager.Inst[MBContexts.UI_CONTEXT];
-	}
+    get
+    {
+        return MiniBind.MBManager.Inst[MBContexts.UI_CONTEXT];
+    }
 }
 ```
 
@@ -22,3 +22,4 @@ To set value, call this code:
 ```csharp
 uiContext.SetValue("test.text", "Hello world!");
 ```
+
