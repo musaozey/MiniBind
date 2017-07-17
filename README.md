@@ -9,7 +9,7 @@ Before setting value of this text, add this MiniBind field to your code to use i
 ```csharp
 private MiniBind uiContext
 {
-    get
+	get
 	{
 		return MBManager.Inst[MBContexts.UI_CONTEXT];
 	}
